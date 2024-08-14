@@ -1,0 +1,96 @@
+body {
+    background: url('TempConverterBg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    height: 100vh;
+    margin: 0px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+h1 {
+font-size: 2rem;
+color:white;
+}
+
+.converter {
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.converter label {
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.converter input,
+.converter select {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.converter button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    color: blue;
+    background-color: antiquewhite;
+    border: 1px solid blue;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.converter button:hover {
+    background-color: aquamarine;
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid blue;
+    color: blue;
+    border-radius: 8px;
+    font-weight: bold;
+}
+/* adding media query */
+@media (max-width:768px){
+    .converter{
+        max-width: 350px;
+        padding: 15px;
+    }
+    input[type="number"],select,button{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+@media (max-width:480px){
+    .converter{
+        max-width: 300px;
+        padding: 10px;
+    } 
+    input[type="number"], .converter select , .converter button {
+        font-size: 10px;
+        padding: 8px;
+    }
+}
